@@ -11,7 +11,7 @@ class ControleEstoque:
                 estoque = json.load(arquivo)
             return estoque
         except FileNotFoundError:
-            print(f"Arquivo {self.arquivo_estoque} nao encontrado. Criando novo arquivo.")
+            print(f"Arquivo {self.arquivo_estoque} não encontrado. Criando novo arquivo.")
             return {}
 
     def salvar_estoque(self):
